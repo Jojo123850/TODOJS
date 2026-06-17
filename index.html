@@ -9,9 +9,15 @@
 <body>
 <main>         
     <div class="recherche">
-      <input type="text" id="taskInput" placeholder="Entrer une tache">
-      <button id="addButton">Rechercher</button>
-      <li id="taskList"></li>
+      <input type="text" id="libelle" placeholder="Entrer une tache">
+      <select name="tache" id="difficulte">
+        <option value="facile" >Facile</option>
+        <option value="moyen" >Moyen</option>
+        <option value="Difficile" >Difficile</option>
+        </select>
+      <button onclick="ajouterLaTacheGlb()"> Ajouter la tache</button>
+       <div id="resultat"></div>
+      <ul id="afficherTache"></ul>
     </div>
 </main>
 <script src="script.js"></script>
