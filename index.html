@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DO LIST</title>
+    <title>TO DO LIST GAMIFIE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>         
     <div class="recherche">
+        <div id="statistique"></div>
       <input type="text" id="libelle" placeholder="Entrer une tache">
       <select name="tache" id="difficulte">
         <option value="facile" >Facile</option>
         <option value="moyen" >Moyen</option>
-        <option value="Difficile" >Difficile</option>
+        <option value="difficile" >Difficile</option>
         </select>
       <button onclick="ajouterLaTacheGlb()"> Ajouter la tache</button>
        <div id="resultat"></div>
-      <ul id="afficherTache"></ul>
     </div>
 </main>
 <script src="script.js"></script>
